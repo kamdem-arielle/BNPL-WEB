@@ -26,7 +26,7 @@ To configure a VH on the server I had to :
 
 ##### 1. Create a bitbucket.yml file which contains the config for your pipeline.
 
-<span style="background-color:grey">
+<div style="background-color:red">
 # bnpl pipeline for CI/CD
 # By Arielle
 # On 10/03/2023
@@ -34,7 +34,7 @@ To configure a VH on the server I had to :
 # ------
 
 image: node:16.16.0
-# image: atlassianlabs/docker-node-jdk-chrome-firefox
+
 
 pipelines:
   branches:
@@ -102,4 +102,4 @@ pipelines:
     #        - echo "Deploy step finished"
     #        - exit $?
     #        - EOF
-</span>
+</div>
