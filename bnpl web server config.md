@@ -10,13 +10,13 @@ To configure a VH on the server I had to :
 
 ##### 1. install apache2 on the ubuntu server using the command:
 
-######sudo apt update
-######sudo apt install apache2
+###### sudo apt update
+###### sudo apt install apache2
 
 ##### 2. Configure a virtual host:
 
 ###### Create a folder for the project in the directory /var/www/html.
-###### Go to the directory /etc/apache2/sites-available/ and create a config file with name your_domain_name.conf using the command sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/your_domain_name.conf to create a copy of the default apache site conf file.
+###### Go to the directory <u>/etc/apache2/sites-available/</u> and create a config file with name your_domain_name.conf using the command sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/your_domain_name.conf to create a copy of the default apache site conf file.
 ###### modify the conf file with ServerAdmin your email,ServerName your domain name ,ServerAlias your server name and root the directory with the index.html of your project.
 ###### Activate the site using the command sudo a2ensite your_domain_name.conf.
 ###### Finally restart apache using the command service apache2 reload.
