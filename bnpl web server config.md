@@ -28,3 +28,20 @@ To configure a VH on the server I had to :
 
 ![.yml file](https://github.com/kamdem-arielle/BNPL-WEB/blob/2d2db47a5daba6d8fd80598ad30e91cead632e0a/assets/bitbucket.png)
 
+##### 2. Create a ssh key in the pipeline settings of your repository under the ssh keys tab.
+
+![.yml file](https://github.com/kamdem-arielle/BNPL-WEB/blob/73ee387a1b4bc301fe2fe80f6349bce6e01b1dea/assets/ssh%20keys.jpg)
+
+
+##### 3. Add the ssh key created in the authorized keys file of your server located in the "~/.ssh" directory.
+
+![.yml file](https://github.com/kamdem-arielle/BNPL-WEB/blob/main/assets/authorized%20keys.jpg)
+
+##### 4. Then add the host(server ip) in the KnownHost section in the ssh keys config in pipeline config and fetch to verify connection.
+
+
+##### 5. Create repo variables in the pipeline config section with each info matching your own server informations.
+
+![.yml file](https://github.com/kamdem-arielle/BNPL-WEB/blob/main/assets/repo%20var.jpg)
+
+##### 6. Push your code to the project forked repository and create a pull request.When merging the PR the pipeline will be running and you can view the pipeline running in the pipeline section.
