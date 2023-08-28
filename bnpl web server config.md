@@ -33,7 +33,8 @@ To configure a VH on the server I had to :
 ![.yml file](https://github.com/kamdem-arielle/BNPL-WEB/blob/73ee387a1b4bc301fe2fe80f6349bce6e01b1dea/assets/ssh%20keys.jpg)
 
 
-##### 3. Add the ssh key created in the authorized keys file of your server located in the "~/.ssh" directory.
+##### 3. Add the ssh key created in the authorized_keys file of your server located in the "~/.ssh".
+if the directory does not exist create it using  mkdir -p ~/.ssh and then add the ssh key in the authorized_keys file(if it does not exist create it using  the command touch ~/.ssh/authorized_keys)
 
 ![.yml file](https://github.com/kamdem-arielle/BNPL-WEB/blob/main/assets/authorized%20keys.jpg)
 
